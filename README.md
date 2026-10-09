@@ -16,4 +16,6 @@ Original challenge files are preserved under `reference/`; supplied images moved
 
 - The accordion is native `<details name="faq">`: one answer open at a time, Enter/Space keyboard support and the expanded state come from the browser, and it works without JavaScript. The second question starts open, as in the design comp.
 - The design sets questions at 13–14px and answers at 12px. They rise to the family 16px floor because they are the page's body copy; the card keeps the Figma width and positions and grows slightly taller.
+- The answer gray and interactive orange are darker versions of the supplied colors. Expanded answers and hovered questions meet 4.5:1 normal text contrast, and the keyboard focus ring meets 3:1 against the card. Rendered browser regressions cover every answer and hover state at mobile, tablet and desktop widths.
+- Footer links keep their readable white color on hover and use a thicker underline to show the state against the gradient.
 - The desktop card (920×509) starts at 1120px, where the box illustration that breaks out of the card's left edge still has room on screen. Below that the mobile layout is used, with the card widening up to 480px.

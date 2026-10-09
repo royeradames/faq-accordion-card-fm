@@ -28,7 +28,7 @@ test("opens one answer at a time by mouse, with the design's open and hover stat
   await page.goto("/");
   const first = item(page, questions[0]).locator("summary");
   await first.hover();
-  await expect(first).toHaveCSS("color", "rgb(244, 123, 86)");
+  await expect(first).toHaveCSS("color", "rgb(186, 76, 42)");
   await first.click();
   expect(await isOpen(page, questions[0])).toBe(true);
   expect(await isOpen(page, questions[1])).toBe(false);
