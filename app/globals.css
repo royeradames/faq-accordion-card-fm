@@ -40,7 +40,7 @@ details p { margin: 0 0 1rem; padding-right: 1.5rem; color: var(--answer); font-
 
 footer { padding: 0 1.5rem 1.5rem; color: var(--card); font-size: 1rem; line-height: 1.5; text-align: center; }
 footer a { display: inline-block; min-height: 2.75rem; padding-block: .625rem; font-weight: 700; }
-footer a:hover { color: var(--title); }
+footer a:hover { color: var(--card); text-decoration-thickness: 2px; }
 footer :focus-visible { outline-color: var(--card); }
 .site-name { font-weight: 700; }
 
