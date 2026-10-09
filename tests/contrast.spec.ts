@@ -83,3 +83,16 @@ test("footer links retain normal text contrast on hover", async ({ page }) => {
     }
   }
 });
+
+
+test("footer hover enables its visible underline", async ({ page }) => {
+  for (const width of [375, 768, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/");
+    for (const link of await page.locator("footer a").all()) {
+      await link.hover();
+      await expect(link).toHaveCSS("text-decoration-line", "underline");
+      await expect(link).toHaveCSS("text-decoration-thickness", "2px");
+    }
+  }
+});
