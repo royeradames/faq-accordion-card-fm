@@ -125,7 +125,7 @@ test("the accordion works with JavaScript disabled", async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   try {
-    await page.goto("http://127.0.0.1:4537/");
+    await page.goto("http://127.0.0.1:4584/");
     await item(page, questions[2]).locator("summary").click();
     await expect(page.getByText("Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.")).toBeVisible();
     expect(await isOpen(page, questions[1])).toBe(false);
